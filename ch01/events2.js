@@ -2,8 +2,8 @@ var EventEmitter = require('events').EventEmitter;
 
 var Counter = function ( count ) {
   this.count = count || 0;
-  this.half = (1.5 * count) || 0;
-  this.whole = (2 * count) || 0;
+  this.half = (1.5 * count);
+  this.whole = (2 * count);
 };
 
 Counter.prototype = new EventEmitter();
